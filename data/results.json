@@ -1,0 +1,90 @@
+[
+  {
+    "id": 71,
+    "name": "Bachanagari Sreeja",
+    "semester": 3,
+    "CSA": 70,
+    "DBMS": 95,
+    "MFCS": 90,
+    "PS": 93,
+    "DS": 98,
+    "QMLR": 89
+  },
+  {
+    "id": 74,
+    "name": "Bijjala SaiGanesh",
+    "semester": 3,
+    "CSA": 65,
+    "DBMS": 50,
+    "MFCS": 98,
+    "DS": 89,
+    "QMLR": 96,
+    "PS": 100
+  },
+  {
+    "id": 76,
+    "name": "Budige Sanjay",
+    "semester": 3,
+    "CSA": 70,
+    "DBMS": 65,
+    "MFCS": 60,
+    "PS": 93,
+    "DS": 78,
+    "QMLR": 89
+  },
+  {
+    "id": 75,
+    "name": "Bokka Bhavya",
+    "semester": 3,
+    "CSA": 85,
+    "DBMS": 65,
+    "MFCS": 60,
+    "PS": 83,
+    "DS": 88,
+    "QMLR": 89
+  },
+  {
+    "id": 85,
+    "name": "Gajjavalli Hemanth",
+    "semester": 3,
+    "CSA": 80,
+    "DBMS": 95,
+    "MFCS": 80,
+    "PS": 73,
+    "DS": 68,
+    "QMLR": 89
+  },
+  {
+    "id": 93,
+    "name": "Dev Abhishek",
+    "semester": 3,
+    "CSA": 70,
+    "DBMS": 45,
+    "MFCS": 60,
+    "PS": 93,
+    "DS": 78,
+    "QMLR": 34
+  },
+  {
+    "id": 95,
+    "name": "Deepak Kurma",
+    "semester": 3,
+    "CSA": 70,
+    "DBMS": 25,
+    "MFCS": 70,
+    "PS": 63,
+    "DS": 78,
+    "QMLR": 89
+  },
+  {
+    "id": 90,
+    "semester": 3,
+    "CSA": 100,
+    "DBMS": 92,
+    "MFCS": 100,
+    "PS": 100,
+    "DS": 98,
+    "QMLR": 100,
+    "name": "tarun"
+  }
+]
