@@ -22,7 +22,7 @@ const getALLStudents = (req,res)=>{
 }
 
 const getStudent = (req,res)=>{
-    const specificResult = results.find((res) => res.id === (req.params.id * 1))
+    const specificResult = results.find((res) => res.roll === (req.params.roll * 1))
 
     if(!specificResult){
         return res.status(404).json({
@@ -55,8 +55,8 @@ const createStudent = (req,res)=>{
 }
 
 const updateStudent = (req,res)=>{
-    const id = req.params.id * 1;
-    const studentIndex = results.findIndex(s => s.id === id);
+    const roll = req.params.roll * 1;
+    const studentIndex = results.findIndex(s => s.roll === roll);
 
     try{
          if(studentIndex === -1){
@@ -82,9 +82,9 @@ const updateStudent = (req,res)=>{
 }
 
 const deleteStudent = (req,res)=>{
-    const id = req.params.id * 1;
+    const roll = req.params.roll * 1;
     try{
-        results = results.filter(r => r.id !== id)
+        results = results.filter(r => r.roll !== roll)
         fs.writeFileSync(`${__dirname}/../data/results.json`, JSON.stringify(results))
         res.status(200).json({
             message: 'deletion successfull'

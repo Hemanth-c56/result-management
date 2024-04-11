@@ -1,6 +1,6 @@
 [
   {
-    "id": 71,
+    "roll": 71,
     "name": "Bachanagari Sreeja",
     "semester": 3,
     "CSA": 70,
@@ -11,7 +11,7 @@
     "QMLR": 89
   },
   {
-    "id": 74,
+    "roll": 74,
     "name": "Bijjala SaiGanesh",
     "semester": 3,
     "CSA": 65,
@@ -22,7 +22,7 @@
     "PS": 100
   },
   {
-    "id": 76,
+    "roll": 76,
     "name": "Budige Sanjay",
     "semester": 3,
     "CSA": 70,
@@ -33,7 +33,7 @@
     "QMLR": 89
   },
   {
-    "id": 75,
+    "roll": 75,
     "name": "Bokka Bhavya",
     "semester": 3,
     "CSA": 85,
@@ -44,7 +44,7 @@
     "QMLR": 89
   },
   {
-    "id": 85,
+    "roll": 85,
     "name": "Gajjavalli Hemanth",
     "semester": 3,
     "CSA": 80,
@@ -55,7 +55,7 @@
     "QMLR": 89
   },
   {
-    "id": 93,
+    "roll": 93,
     "name": "Dev Abhishek",
     "semester": 3,
     "CSA": 70,
@@ -66,7 +66,7 @@
     "QMLR": 34
   },
   {
-    "id": 95,
+    "roll": 95,
     "name": "Deepak Kurma",
     "semester": 3,
     "CSA": 70,
@@ -75,16 +75,5 @@
     "PS": 63,
     "DS": 78,
     "QMLR": 89
-  },
-  {
-    "id": 90,
-    "semester": 3,
-    "CSA": 100,
-    "DBMS": 92,
-    "MFCS": 100,
-    "PS": 100,
-    "DS": 98,
-    "QMLR": 100,
-    "name": "tarun"
   }
 ]
