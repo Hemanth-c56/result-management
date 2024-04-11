@@ -3,10 +3,13 @@ import { dirname } from "path";
 import { fileURLToPath } from "url";
 const __dirname = dirname(fileURLToPath(import.meta.url))
 
-// Reading results file data
-var results = JSON.parse(fs.readFileSync(`${__dirname}/../data/results.json`))
+import Result from '../models/resultModel.js';
 
-const getALLStudents = (req,res)=>{
+// Reading results file data
+// var results = JSON.parse(fs.readFileSync(`${__dirname}/../data/results.json`))
+
+const getALLStudents = async(req,res)=>{
+    const results = await Result.find({});
     try{
         res.status(200).json({
         message: 'successfull',
@@ -14,9 +17,9 @@ const getALLStudents = (req,res)=>{
         results
         })
     }
-    catch{
+    catch(error){
         res.status(200).json({
-            message: 'something went wrong'
+            message: error || 'something went wrong'
         })
     }
 }
