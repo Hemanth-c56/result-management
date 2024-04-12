@@ -11,7 +11,7 @@ app.use(morgan('dev'))
 app.use(express.json())
 
 app.use((req,res,next)=>{
-    console.log("i am middleware")
+    console.log("i am middleware 😁😁")
     next();
 })
 
