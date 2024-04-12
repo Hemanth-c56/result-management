@@ -16,19 +16,28 @@ const getALLStudents = async (req, res) => {
 };
 
 const getStudent = async (req, res) => {
-  const specificResult = await Result.find({ roll: req.params.roll * 1 });
-  console.log(specificResult)
 
-  if (specificResult.length === 0) {
-    return res.status(404).json({
-      message: "failed - there is no data with such roll number",
+  try{
+    const specificResult = await Result.find({ roll: req.params.roll * 1 });
+    console.log(specificResult)
+  
+    if (specificResult.length === 0) {
+      return res.status(404).json({
+        message: "failed - there is no data with such roll number",
+      });
+    }
+  
+    res.status(200).json({
+      message: "successfull",
+      specificResult,
     });
   }
-
-  res.status(200).json({
-    message: "successfull",
-    specificResult,
-  });
+  catch(error){
+    res.status(400).json({
+      message: "failed",
+      error
+    })
+  }
 };
 
 const createStudent = async (req, res) => {
