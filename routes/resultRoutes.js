@@ -1,7 +1,11 @@
 import express from "express"
-import {createStudent, getALLStudents, getStudent, updateStudent, deleteStudent} from "../controllers/resultController.js"
+import {createStudent, getALLStudents, getStudent, updateStudent, deleteStudent, top3Csa, getMFCSStats} from "../controllers/resultController.js"
 
 const studentRouter = express.Router();
+
+studentRouter.route('/stats/MFCS').get(getMFCSStats)
+
+studentRouter.route('/top3csa').get(top3Csa, getALLStudents)
 
 studentRouter.route('/').get(getALLStudents).post(createStudent)
 

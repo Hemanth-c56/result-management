@@ -1,0 +1,8 @@
+$match - match to a specific field
+$set - update a value
+$unset - remove some values
+$sort - sort accordingly
+$limit - limiting the result
+$push - pushes some fields to a document
+$sum - sums up things
+$lookup - to join two documents based on a similar field

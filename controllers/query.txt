@@ -1,0 +1,6 @@
+//Basic query :- url/api/results?duration=5&difficulty=easy
+
+special fields :- page,sort,limit,fields -- all these should be excluded from query object
+
+a query with greather than and less than would look like :- url/api/results?duration[gte||lte||gt||lt]=5
+//format = { CSA: { gte: '70' } }
